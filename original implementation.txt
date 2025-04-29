@@ -1,0 +1,91 @@
+ <nav>
+     <ul>
+
+         <li><a href="#home" onclick="showSection('home')">Home</a></li>
+         <li><a href="#aboutme" onclick="showSection('aboutme')">Me and My Passion!</a></li>
+         <li><a href="#theworld" onclick="showSection('theworld')">The World</a></li>
+         <li><a href="#feedback" onclick=" showSection('feedback')">FeedBack</a></li>
+         <li><a href="#sitemap" onclick="showSection('sitemap')">SiteMap</a></li>
+
+     </ul>
+ </nav>
+
+ <section id="home" >
+     <!--<embed src="http://www.example.com" style="width:500px; height: 300px;">-->
+     <!--<embed src="feedback.html" style="width: 100%; height: 800px;" />-->
+     <h2>Photo Gallery</h2>
+     <p>under construction</p>
+
+ </section>
+ <!-- Section 1 : introducing myself and the webpage
+              below you can see me using emojis, images, different fonts and table-->
+ <section id="aboutme" style="display:none">
+     <div class="aboutme">
+         <table>
+             <tr>
+                 <td>
+                     <img src="css/img/me.jpg" alt="me">
+                 </td>
+                 <td>
+                     <h2>All you need to know about me!!</h2>
+                     <p>
+                         <h3>
+                             My name is Davina Lydia Pinto and I am the creator of this beautiful page &#128526
+                             <br> Many a times people ask me why I didn't pursue the culniary arts, well the answer is, I simply don't know!
+                             So here I am just a human who is a computer whiz by day and chef at night &#128540
+                         </h3>
+                         Growing up with my grandparents, I was fed mouthwatering meals.
+                         My grandmother was an amazing chef, and I learned the majority of my culinary talents from her. I enjoy cooking and feeding others, and I believe that food can transport you across continents.
+                         This website features the foods I enjoy the most from around the world.
+                         <br />
+                         In the 'The World' section, you'll discover a map with my favourite foods from each location. Once you click on the glowing points, you will be able to see some of my favourite recipes that I have created or enjoyed over the years. I am still young, therefore my adventure has only just began. That being said, the number of dishes on this map is limited, and I have yet to try various recipes.
+                         <br />
+                         You may help me with this project by filling out the feedback form and telling me about your favourites, as well as any suggestions for how I can enhance this website.
+                     </p>
+                 </td>
+             </tr>
+         </table>
+     </div>
+
+
+ </section>
+ <section id="theworld" style="display:none">
+     <h2>World Map</h2>
+     <p>All the food items and links to youtube videos</p>
+ </section>
+ <section id="feedback" style="display:none">
+     <embed src="feedback.html" style="width: 100%; height: 800px;" />
+ </section>
+ <section id="sitemap" style="display:none">
+     <embed src="sitemap.html" style="width: 100%; height: 800px;" />
+ </section>
+ <section id="sourcelog" style="display:none">
+     <embed src="sourcelog.html" style="width: 100%; height: 800px;" />
+ </section>
+
+
+
+ <footer>
+     <table>
+         <tr>
+             <td><a href="#" onclick="showSection('aboutme')">Me and My Passion!</a></td>
+         </tr>
+         <tr>
+             <td><a href="#" onclick="showSection('theworld')">The World</a></td>
+         </tr>
+         <tr>
+             <td><a href="#" onclick=" showSection('feedback')">FeedBack</a></td>
+         </tr>
+         <tr>
+             <td><a href="assignment.html" onclick="showSection('assignmentPage')">AssignmentPage</a></td>
+         </tr>
+         <tr>
+             <td><a href="#" onclick="showSection('sitemap')">Site Map</a></td>
+         </tr>
+         <tr>
+             <td><a href="#" onclick="showSection('sourcelog')">Source Log</a></td>
+         </tr>
+         
+     </table>
+     <h5>&copy; All rights reserved to the crazy person who created this monstrosity of a website</h5>
+ </footer>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sitemap</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/sitemapstyle.css" >
+    <link rel="stylesheet" href="css/printstyle.css" media="print" >
+</head>
+<body>
+    <!--website header : common through all webpages-->
+    <header>
+        <h1>Journey the world through food</h1>
+    </header>
+    <!-- menu bar used to traverse through the website -->
+    <nav>
+        <ul>
+            <li><a href="index.html" aria-label="HomePage/Gallery page">Home</a></li>
+            <li><a href="aboutme.html" aria-label="Description about me and why I chose this website topic">Me and My Passion!</a></li>
+            <li><a href="theworld.html" aria-label="World map is visible here">The World</a></li>
+            <li><a href="testimonials.html" aria-label="testimonial on me or my website by users">Testimonials</a></li>
+            <li><a href="feedback.html" aria-label="you can give me feedback by going to this page">FeedBack</a></li>
+            <li><a href="aboutmysite.html" aria-label="I have disected my thought process">My Reflection</a></li>
+            <li><a href="sitemap.html" aria-label="every link in the website will be visible here">SiteMap</a></li>
+        </ul>
+    </nav>
+    <!--website loading : common through all webpages-->
+    <div id="loading">
+        <img src="css/img/loading.gif" alt="Loading">
+    </div>
+
+    <!--section for the sitemap, the links are added in the form of unordered lists-->
+    <section class="sitemap" >
+
+        <h2>Sitemap</h2>
+        <div style="justify-content:center">
+            <ul class="main-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                    <ul class="submenu">
+                        <li><a href="index.html#favorites">My favourites in the world</a></li>
+                        <li><a href="index.html#mycooking">Things cooked by me</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutme.html">Me and My Passion!</a></li>
+                <li><a href="theworld.html">The World</a>
+                    <ul class="submenu">
+                        <li><a href="theworld.html#worldmap">World Map</a></li>
+                        <li>
+                            Recipes
+                            <ul class="submenu">
+                                <li><a href="recipies.html?itemid=india">India</a></li>
+                                <li><a href="recipies.html?itemid=usa">USA</a></li>
+                                <li><a href="recipies.html?itemid=germany">Germany</a></li>
+                                <li><a href="recipies.html?itemid=japan">Japan</a></li>
+                                <li><a href="recipies.html?itemid=china">China</a></li>
+                                <li><a href="recipies.html?itemid=nepal">Nepal</a></li>
+                                <li><a href="recipies.html?itemid=pakistan">Pakistan</a></li>
+                                <li><a href="recipies.html?itemid=italy">Italy</a></li>
+                                <li><a href="recipies.html?itemid=greece">Greece</a></li>
+                                <li><a href="recipies.html?itemid=france">France</a></li>
+                                <li><a href="recipies.html?itemid=canada">Canada</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="posts.html">Posts</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="aboutmysite.html">My Reflection</a></li>
+                <li><a href="sitemap.html">SiteMap</a></li>
+                <li>
+                    Documentation
+                    <ul class="submenu">
+                        <li><a href="assignment.html">Assignment Page</a></li>
+                        <li><a href="validation.html">Validation Pictures</a></li>
+                        <li><a href="sourcelog.html">SourceLog</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!--website footer:common for all webpages-->
+    <footer>
+        <table>
+            <tr>
+                <td><a href="aboutme.html" aria-label="Description about me and why I chose this website topic">Me and My Passion!</a></td>
+            </tr>
+            <tr>
+                <td><a href="theworld.html" aria-label="World map is visible here">The World</a></td>
+            </tr>
+            <tr>
+                <td><a href="feedback.html" aria-label="you can give me feedback by going to this page">FeedBack</a></td>
+            </tr>
+            <tr>
+                <td><a href="assignment.html" aria-label="assignment details document" onclick="showSection('assignmentPage')">AssignmentPage</a></td>
+            </tr>
+            <tr>
+                <td><a href="sitemap.html" aria-label="every link in the website will be visible here">Site Map</a></td>
+            </tr>
+            <tr>
+                <td><a href="sourcelog.html" aria-label="list of all references used">Source Log</a></td>
+            </tr>
+
+        </table>
+        <h4>&copy; All rights reserved to the crazy person who created this monstrosity of a website</h4>
+    </footer>
+    <!--javascript link-->
+    <script src="java/script.js"></script>
+</body>
+</html>

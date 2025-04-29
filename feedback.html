@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedbackform</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/feedbackstyle.css" >
+    <link rel="stylesheet" href="css/printstyle.css" media="print" >
+</head>
+<body>
+    <header>
+        <h1>Journey the world through food</h1>
+    </header>
+    <!-- menu bar used to traverse through the website -->
+    <nav>
+        <ul>
+
+            <li><a href="index.html" aria-label="HomePage/Gallery page">Home</a></li>
+            <li><a href="aboutme.html" aria-label="Description about me and why I chose this website topic">Me and My Passion!</a></li>
+            <li><a href="theworld.html" aria-label="World map is visible here">The World</a></li>
+            <li><a href="testimonials.html" aria-label="testimonial on me or my website by users">Testimonials</a></li>
+            <li><a href="feedback.html" aria-label="you can give me feedback by going to this page">FeedBack</a></li>
+            <li><a href="aboutmysite.html" aria-label="I have disected my thought process">My Reflection</a></li>
+            <li><a href="sitemap.html" aria-label="every link in the website will be visible here">SiteMap</a></li>
+        </ul>
+    </nav>
+    <!--website loading : common through all webpages-->
+    <div id="loading">
+        <img src="css/img/loading.gif" alt="Loading">
+    </div>
+    <!-- feedback section -->
+    <section>
+
+        <h2>I would love to hear your thoughts</h2>
+        <div class="feedbackForm">
+            <form id="feedbackForm" action="mailto:random@anu.edu.au" method="post" enctype="text/plain">
+
+                <label for="name">What's in a name? But what should I call you?....</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="country">Which country do you call your home?</label>
+                <select id="country" name="country">
+                    <option label="Select Country" value="" />
+                </select>
+                <br><br>
+
+                <label for="favoritemeal">Favorite fooditem? I love love to know....</label>
+                <input type="text" id="favoritemeal" name="favoritemeal" required><br>
+                <br>
+
+                <label for="recipe">Would you like to share the recipe?</label>
+                <br>
+                <textarea id="recipe" name="recipe" rows="4"></textarea><br>
+                <br>
+
+                <label for="feedback">How can I improve this website?</label>
+                <br>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea><br>
+                <br><br>
+
+                <button onclick="submit()" >Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!--website footer:common for all webpages-->
+    <footer>
+        <table>
+            <tr>
+                <td><a href="aboutme.html" aria-label="Description about me and why I chose this website topic">Me and My Passion!</a></td>
+            </tr>
+            <tr>
+                <td><a href="theworld.html" aria-label="World map is visible here">The World</a></td>
+            </tr>
+            <tr>
+                <td><a href="feedback.html" aria-label="you can give me feedback by going to this page">FeedBack</a></td>
+            </tr>
+            <tr>
+                <td><a href="assignment.html" aria-label="assignment details document" onclick="showSection('assignmentPage')">AssignmentPage</a></td>
+            </tr>
+            <tr>
+                <td><a href="sitemap.html" aria-label="every link in the website will be visible here">Site Map</a></td>
+            </tr>
+            <tr>
+                <td><a href="sourcelog.html" aria-label="list of all references used">Source Log</a></td>
+            </tr>
+
+        </table>
+        <h4>&copy; All rights reserved to the crazy person who created this monstrosity of a website</h4>
+    </footer>
+
+    <!--javascript link-->
+
+    <script src="java/script.js"></script>
+    <script src="java/feedbackscript.js"></script>
+</body>
+</html>

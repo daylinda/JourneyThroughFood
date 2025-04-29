@@ -1,0 +1,205 @@
+<!Doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/validationstyle.css" >
+    <link rel="stylesheet" href="css/printstyle.css" media="print" >
+</head>
+<body>
+    <!--website header : common through all webpages-->
+    <header>
+        <h1>Journey the world through food</h1>
+    </header>
+    <!-- menu bar used to traverse through the website -->
+    <nav>
+        <ul>
+            <li><a href="index.html" aria-label="HomePage/Gallery page">Home</a></li>
+            <li><a href="aboutme.html" aria-label="Description about me and why I chose this website topic">Me and My Passion!</a></li>
+            <li><a href="theworld.html" aria-label="World map is visible here">The World</a></li>
+            <li><a href="testimonials.html" aria-label="testimonial on me or my website by users">Testimonials</a></li>
+            <li><a href="feedback.html" aria-label="you can give me feedback by going to this page">FeedBack</a></li>
+            <li><a href="aboutmysite.html" aria-label="I have disected my thought process">My Reflection</a></li>
+            <li><a href="sitemap.html" aria-label="every link in the website will be visible here">SiteMap</a></li>
+
+        </ul>
+    </nav>
+    <!--website loading : common through all webpages-->
+    <div id="loading">
+        <img src="css/img/loading.gif" alt="Loading">
+    </div>
+    <!-- section for validation -->
+    <section class="validation">
+        <h2 style="text-align:center">Validation of website</h2>
+        <table>
+            <tr>
+                <th>Image</th>
+                <th>Page</th>
+                <th>Justification</th>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/index.png" alt="validation errors in index.html" ></td>
+                <td>Home page</td>
+                <td>header and display image source are empty beacuse I populate it when an picture is clicked on</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/sitemap.png" alt="validation errors in sitemap.html" ></td>
+                <td>sitemap</td>
+                <td>adding lang tag causes the page to go blank</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/aboutme.png" alt="validation errors in aboutme.html" ></td>
+                <td>About me</td>
+                <td>adding lang tag causes the page to go blank</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/aboutmysite.png" alt="validation errors in aboutmysite.html" ></td>
+                <td>reflection</td>
+                <td>adding lang tag causes the page to go blank <br >for some reason it is not reading the "p" tag even though it is added</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/sourcelog.png" alt="validation errors in sourcelog.html" ></td>
+                <td>sourcelog</td>
+                <td>adding lang tag causes the page to go blank</td>
+            </tr> 
+            
+            <tr>
+                <td><img src="css/img/validation/world.png" alt="validation errors in world.html" ></td>
+                <td>World</td>
+                <td>adding lang tag causes the page to go blank <br> I require the version attribute, without it the svg doesn't load properly</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/feedback.png" alt="validation errors in feedback.html" ></td>
+                <td>Feedback</td>
+                <td>
+                    adding lang tag causes the page to go blank <br>
+                    Doctype attribute is not added in the html tag because it causes the css not to work properly<br />
+                    the value of the option tag is empty as I set it with javascript when a country is selected 
+                </td>
+            </tr> 
+            <tr>
+                <td><img src="css/img/validation/recipies.png" alt="validation errors in recipies.html" ></td>
+                <td>Recipies</td>
+                <td>
+                    I have taken the embeded iframe code from the official youtube page, hence don't want to change the code
+                    <br />
+                    you can see the entire validation file here <a href="css/img/validation/Showing results for recipies.html - Nu Html Checker.pdf">validation of recipies.html</a>
+
+                </td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/posts.png" alt="validation errors in posts.html" ></td>
+                <td>Posts</td>
+                <td>
+                    I have taken the embeded  code from the official instagram page, hence don't want to change the code
+                    <br />
+                    you can see the entire validation file here <a href="css/img/validation/Showing results for posts.html - Nu Html Checker.pdf">validation of posts.html</a>
+
+                </td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/testimonials.png" alt="validation errors in testimonials.html" ></td>
+                <td>Testimonials</td>
+                <td>adding lang tag causes the page to go blank</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/validation.png" alt="validation errors in validation.html" ></td>
+                <td>validation</td>
+                <td>adding lang tag causes the page to go blank</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/aboutme_css.png" alt="validation errors in aboutme css" ></td>
+                <td>about me css</td>
+                <td>No error</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/cta.png" alt="validation errors in cta css" ></td>
+                <td>cta css</td>
+                <td>No error</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/feedback_css.png" alt="validation errors in feedback css" ></td>
+                <td>feedback css</td>
+                <td>No error</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/gallery_css.png" alt="validation errors in gallery css" ></td>
+                <td>gallery css</td>
+                <td>No error</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/posts_css.png" alt="validation errors in posts css" ></td>
+                <td>posts css</td>
+                <td>No error</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/recipies_css.png" alt="validation errors in recipies css" ></td>
+                <td>recipies css</td>
+                <td>No error</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/sitemap_css.png" alt="validation errors in sitemap css" ></td>
+                <td>sitemap css</td>
+                <td>No error</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/sourcelog_css.png" alt="validation errors in sourcelog css" ></td>
+                <td>sourcelog css</td>
+                <td>No error</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/style_css.png" alt="validation errors in style css" ></td>
+                <td>main style css</td>
+                <td>No error</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/world_css.png" alt="validation errors in world css" ></td>
+                <td>world css</td>
+                <td>No error</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/validation_css.png" alt="validation errors in validation css" ></td>
+                <td>validation css</td>
+                <td>No error</td>
+            </tr>
+            <tr>
+                <td><img src="css/img/validation/testimonials_css.png" alt="validation errors in testimonials css" ></td>
+                <td>testimonials css</td>
+                <td>No error</td>
+            </tr>
+            
+        </table>
+    </section>
+
+    
+
+    <!--website footer:common for all webpages-->
+    <footer>
+        <table>
+            <tr>
+                <td><a href="aboutme.html" aria-label="Description about me and why I chose this website topic">Me and My Passion!</a></td>
+            </tr>
+            <tr>
+                <td><a href="theworld.html" aria-label="World map is visible here">The World</a></td>
+            </tr>
+            <tr>
+                <td><a href="feedback.html" aria-label="you can give me feedback by going to this page">FeedBack</a></td>
+            </tr>
+            <tr>
+                <td><a href="assignment.html" aria-label="assignment details document" onclick="showSection('assignmentPage')">AssignmentPage</a></td>
+            </tr>
+            <tr>
+                <td><a href="sitemap.html" aria-label="every link in the website will be visible here">Site Map</a></td>
+            </tr>
+            <tr>
+                <td><a href="sourcelog.html" aria-label="list of all references used">Source Log</a></td>
+            </tr>
+
+        </table>
+        <h4>&copy; All rights reserved to the crazy person who created this monstrosity of a website</h4>
+    </footer>
+    <!--javascript link-->
+    <script src="java/script.js"></script>
+</body>
+</html>

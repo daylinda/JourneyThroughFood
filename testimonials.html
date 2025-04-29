@@ -1,0 +1,116 @@
+<!Doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testimonial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/printstyle.css" media="print">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <script src="https://apis.google.com/js/api.js"></script>    
+
+</head>
+<body>
+    <!--website header : common through all webpages-->
+    <header>
+        <h1>Journey the world through food</h1>
+    </header>
+    <!-- menu bar used to traverse through the website -->
+    <nav>
+        <ul>
+            <li><a href="index.html" aria-label="HomePage/Gallery page">Home</a></li>
+            <li><a href="aboutme.html" aria-label="Description about me and why I chose this website topic">Me and My Passion!</a></li>
+            <li><a href="theworld.html" aria-label="World map is visible here">The World</a></li>
+            <li><a href="testimonials.html" aria-label="testimonial on me or my website by users">Testimonials</a></li>
+            <li><a href="feedback.html" aria-label="you can give me feedback by going to this page">FeedBack</a></li>
+            <li><a href="aboutmysite.html" aria-label="I have disected my thought process">My Reflection</a></li>
+            <li><a href="sitemap.html" aria-label="every link in the website will be visible here">SiteMap</a></li>
+
+        </ul>
+    </nav>
+    <!--website loading : common through all webpages-->
+    <div id="loading">
+        <img src="css/img/loading.gif" alt="Loading">
+    </div>
+
+    <!-- Section for testimonial videos -->
+    <section>
+        <h2>Just somethings that people have to say about me, my food and this lovely webpage &#129496;</h2>
+        <div class="testimonials-videos">
+            <!--videos displayed-->
+            <div class="video-grid">
+                <div>
+                    <video controls >
+                        <source src="css/videos/mukul.mp4"  type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div>
+                    <video controls>
+                        <source src="css/videos/kartik.mp4"  type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div>
+                    <video controls>
+                        <source src="css/videos/jason.mp4"  type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div>
+                    <video controls>
+                        <source src="css/videos/arya.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+            </div>
+        </div>
+       
+        <div class="user-testimonials">
+            <h2>Just some user testimonials</h2>
+            <div id="postsContainer"></div>
+            <h3>Would you like to say something? leave a message, be part of the community</h3>
+            <form id="postForm">
+                <input type="text" id="userName" placeholder="Enter Your Name">
+                <textarea name="postContent" id="postContent" placeholder="Enter Your Testimonial" ></textarea><br>
+                <button type="button" onclick="submitPost()">Submit</button>
+            </form>
+
+
+
+        </div>
+       
+
+    </section>
+
+    <!--website footer:common for all webpages-->
+    <footer>
+        <table>
+            <tr>
+                <td><a href="aboutme.html" aria-label="Description about me and why I chose this website topic">Me and My Passion!</a></td>
+            </tr>
+            <tr>
+                <td><a href="theworld.html" aria-label="World map is visible here">The World</a></td>
+            </tr>
+            <tr>
+                <td><a href="feedback.html" aria-label="you can give me feedback by going to this page">FeedBack</a></td>
+            </tr>
+            <tr>
+                <td><a href="assignment.html" aria-label="assignment details document" onclick="showSection('assignmentPage')">AssignmentPage</a></td>
+            </tr>
+            <tr>
+                <td><a href="sitemap.html" aria-label="every link in the website will be visible here">Site Map</a></td>
+            </tr>
+            <tr>
+                <td><a href="sourcelog.html" aria-label="list of all references used">Source Log</a></td>
+            </tr>
+
+        </table>
+        <h4>&copy; All rights reserved to the crazy person who created this monstrosity of a website</h4>
+    </footer>
+
+    <!--javascript link-->
+    <script src="java/script.js"></script>
+    <script src="java/testimonial.js"></script>
+</body>
+</html>
