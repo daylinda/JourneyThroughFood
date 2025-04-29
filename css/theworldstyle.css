@@ -1,0 +1,47 @@
+/*CSS for the svg image*/
+svg {
+    width:fit-content;
+    height:auto;
+}
+
+/*CSS to add glow*/
+@keyframes pulse-glow {
+    0% {
+        filter: drop-shadow(0 0 5px red);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 50px darkred);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 5px red);
+    }
+}
+
+/*CSS to make the circle glow and appear red, on hover the circle changes colour and enlarges*/
+circle{
+    fill:red;
+    animation: pulse-glow 2s infinite;
+}
+    circle:hover{        
+        fill:lightyellow;
+        border:groove;
+        border-block-end-width:thick;
+        border-block-color:darkred;
+        r: 40px;
+    }
+
+h3 a {
+    color: chocolate;
+    text-decoration: none;
+    font-size: larger;
+    padding: 5px 5px;
+}
+    h3 a:hover {
+        color: brown;
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+

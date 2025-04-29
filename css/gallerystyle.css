@@ -1,0 +1,135 @@
+/*
+    CSS for showing the pictures in the center of the webpage
+    to set background of picture gallery
+*/
+.gallery {
+    text-align:center;       
+    justify-content:center;
+    padding:10px;
+    margin:10px;
+    background-color:burlywood;
+    border-radius:50px;
+}
+
+
+/*CSS for close button in container*/
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px; 
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px; 
+    display: inline-block;
+    line-height: 1; 
+    opacity: 0.8;
+}
+    /*Close button becomes more visible on hover*/
+    .close-btn:hover, .close-btn:focus {
+        opacity: 1; 
+        text-decoration: none; 
+    }
+
+/*photos appear in a coloumn format*/
+.photo-collage {
+    display: flex; /*for photos to be visible beside each other*/
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo-item {
+    position: relative;
+    cursor: pointer; /*change the mouse when it's over the image to make it point to the image*/
+    overflow: hidden; /*when image enlarges, it just zooms in the set width and height*/
+}
+    .photo-item img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        border-radius: 20px;
+    }
+
+        .photo-item img:hover {
+            transform: scale(1.1);
+            border-radius: 20px;
+            overflow:hidden;
+        }
+
+/*start of display container CSS*/
+#displayContainer {
+    position: fixed;
+    display:none;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    padding: 10px;
+    box-sizing: border-box;
+    flex-direction:column;
+}
+
+#displayImage {
+    margin-top:10px;
+    max-height:250px;
+    max-width:250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); 
+}
+
+#displayDescription {
+    color: white; 
+    text-align: center;
+    margin-top:2px; 
+    font-size: 1.2em; 
+}
+
+#displayHeader{
+    color: white; 
+    text-align: center;  
+}
+
+/*End of display container CSS*/
+
+
+/*This CSS is speacially to change the layout of the gallery with description in printer friendly version*/
+
+@media print{
+    
+    .photo-collage {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 20px; /* Spacing between grid items */
+    }
+
+
+        .photo-item img {
+            margin-bottom: 10px; /* Space between image and description */
+            width: 160px;
+            height: 160px;
+        }
+
+        .photo-item p {
+            font-size: 10pt; /* Adjust font size for descriptions */
+        }
+
+    h2{
+        text-decoration:underline; /*specifically done so that the is clear which gallery album the photos are a part of*/
+    }
+    .gallery {
+        border: solid;
+        border-block-color:burlywood;
+        background-color: unset;
+        
+    }
+
+}
+

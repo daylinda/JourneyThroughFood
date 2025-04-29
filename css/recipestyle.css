@@ -1,0 +1,43 @@
+
+/*CSS to hide the section*/
+.hidden {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/*Start of CSS to make section visible*/
+.visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .visible h2{
+        margin:0;
+    }
+
+    .visible a {
+        color:brown;
+        text-decoration:none;
+        text-transform:uppercase;
+        font-size:medium;
+    }
+        .visible a:hover {
+            color: burlywood;
+        }
+
+/*CSS for centering the embeded youtube video*/
+.youtube-video{
+    align-content:center;
+    margin-bottom:20px;
+}
+
+/*Responsive CSS for embeded youtube video*/
+@media (max-width: 768px) {
+    .youtube-video {
+        width:inherit;
+    }
+}
+

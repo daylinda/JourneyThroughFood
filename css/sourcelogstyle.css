@@ -1,0 +1,23 @@
+.sourcelog{
+    margin:0 auto;
+}
+    .sourcelog h5{
+        margin:0 auto;
+    }
+    .sourcelog table {
+        margin: 0 auto;
+        width: 100%;
+        border: 1px solid;
+        text-align: center;
+        margin-bottom:20px;
+    }
+        .sourcelog table th{
+            
+            font-size:large;
+               
+        }
+
+        .sourcelog table th, td {
+            border: 1px solid;
+        }
+

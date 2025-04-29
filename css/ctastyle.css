@@ -1,0 +1,141 @@
+
+/*CSS for glow*/
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 5px darkred);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px darkred);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 5px darkred);
+    }
+}
+
+/*CSS for CTA one*/
+.cta-one {
+    background-color: burlywood;
+    align-content: center;
+    display: grid;
+}
+
+.text-container {
+    margin-inline-end: 10px;
+    margin-inline-start:20px;
+
+}
+    .text-container h2 {
+        color: darkred;
+        margin-bottom: 0.5em; 
+        text-transform: uppercase;
+    }
+
+    .text-container p {
+        color: #555;
+    }
+
+.cta-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 10px;
+    animation: glow 2s infinite;
+}
+
+    .cta-container button {
+        margin-inline-end: 30px;
+        background-color: darkred;
+        color: antiquewhite;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .cta-container button:hover {
+                background-color: burlywood; 
+                color: #fff; 
+            }
+/*End CSS for CTA one*/
+
+/*CSS for CTA two*/
+.cta-two {
+    margin-top: 15px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    background-color: burlywood;
+    padding: 1px;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.cta-container-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .cta-container-two h3 {
+        margin-inline-start: 10px;
+        color: brown;
+        flex-grow: 1;
+    }
+
+#canvas-circle {
+    margin-inline-start: 70px;
+    border: 1px solid red;
+    border-radius: 20px;
+    color: red;
+    background-color: red;
+    flex-shrink: 0;
+    animation: glow 2s infinite;
+}
+/*End CSS for CTA two*/
+
+
+/* Responsive CSS for mobile */
+@media (max-width: 768px) {
+    .cta-container {
+        flex-direction: column;  
+        align-items: stretch;  
+    }
+
+        .button-container button {
+            margin-top: 20px; 
+            width: 100%; 
+        }
+}
+
+@media print {
+    .cta-one {
+        display:none;
+    }
+
+    .cta-container-two h3 {
+        font-size:small;
+        margin-inline-start: 10px;
+        color: brown;
+        flex-grow: 1;
+    }
+
+    #canvas-circle {
+        border: 1px solid red;
+        border-radius: 20px;
+        color: red;
+        background-color: red;
+        flex-shrink: 0;
+        animation: glow 2s infinite;
+    }
+}
+
+
+
+

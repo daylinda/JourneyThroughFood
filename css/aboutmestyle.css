@@ -1,0 +1,28 @@
+.my table {
+    padding: 15px;
+    margin: 10px;
+    display: inline;
+}
+
+.my tr, .my tr td {
+    padding: 15px;
+}
+
+section div img {
+    width: 200px;
+    height: auto;
+    border: groove;
+    border-block-color: burlywood;
+    
+}
+    section div img:hover{
+        width:250px;
+        height:auto;
+    }
+
+/*Responsive CSS, alterations for mobile, the table changes*/
+@media (max-width: 480px) {
+    .aboutme div table tr,td {
+        display:block;
+    }
+}   

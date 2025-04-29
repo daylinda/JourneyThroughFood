@@ -1,0 +1,38 @@
+/*This css page is specifically to make the print of the website more printerfriendly and show only the things I deem absolutely nec*/
+body {
+    background-color: unset;
+}
+/*style for the page header*/
+header {
+    background-image: url('img/foodcoverphoto.jpg');
+    text-align: center;
+    height: max-content;    
+}
+    /* CSS for header text, making sure the font is smaller in print and removing the shadow */
+    header h1 {
+        font-size: xx-large; 
+        text-transform: uppercase; 
+        font-weight: bold; 
+        color: antiquewhite;
+    }
+/*end style for header*/
+
+nav,footer{
+    display:none
+}
+
+/*Section styling*/
+section {
+    padding: 2px;
+    background-color: antiquewhite;    
+    height: auto;
+    align-content: center;
+}
+
+    section h2 {
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+
+/*End style for section*/
+

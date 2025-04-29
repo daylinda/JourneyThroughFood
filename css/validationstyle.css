@@ -1,0 +1,28 @@
+.validation {
+    margin: 0 auto;
+}
+    .validation img{
+        height: auto;
+        width:500px;
+
+    }
+
+    .validation h5 {
+        margin: 0 auto;
+    }
+
+    .validation table {
+        margin: 0 auto;
+        width: 100%;
+        border: 1px solid;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        .validation table th {
+            font-size: large;
+        }
+
+        .validation th, .validation td {
+            border: 1px solid;
+        }

@@ -1,0 +1,77 @@
+/*CSS for how the videos are displayed*/
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+video {
+    width: 300px; /* Responsive video */
+    height: auto;
+}
+
+/*CSS for the posts form*/
+
+.postForm { 
+    margin: auto;
+    border-radius: 5px;
+    background-color: burlywood;
+    padding: 20px;
+    scroll-padding: auto;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: rosybrown;
+    color: burlywood;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: larger
+}
+
+
+    button:hover {
+        background-color: burlywood;
+        color: rosybrown;
+    }
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*CSS for the table where the posts of users are made visible*/
+#postsContainer table {
+    width: 100%;
+    border: ridge;
+    border-color: burlywood;
+    border-collapse: collapse;
+}
+
+
+#postsContainer th, #postsContainer td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    border-color: burlywood;
+}

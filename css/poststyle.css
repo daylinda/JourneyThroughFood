@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates a grid with three columns */
+    gap: 20px; /* Sets the gap between grid items */
+    padding: 20px; /* Adds some padding around the grid */
+}
+
+.grid-item {    
+    padding: 10px; /* Padding inside each grid item */
+}
+
+    .grid-item blockquote {
+        width: 100%; /* Makes the iframe fill the grid item container */
+         /* Set a fixed height for the iframes */
+    }
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+}
